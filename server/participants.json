@@ -1,30 +1,5 @@
 {
-  "participants": [
-    {
-      "name": "steven",
-      "couple": "maeliss"
-    },
-    {
-      "name": "maeliss",
-      "couple": "steven"
-    },
-    {
-      "name": "thomas",
-      "couple": "mathieu"
-    },
-    {
-      "name": "mathieu",
-      "couple": "thomas"
-    },
-    {
-      "name": "karine",
-      "couple": "lucas"
-    },
-    {
-      "name": "lucas",
-      "couple": "karine"
-    }
-  ],
+  "participants": [],
   "drawResult": [
     "steven offre un cadeau à thomas",
     "thomas offre un cadeau à karine",
