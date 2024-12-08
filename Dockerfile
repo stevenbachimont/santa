@@ -10,11 +10,11 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application files
-COPY . .
+# Copy the server files
+COPY server/ ./server
 
 # Expose the port the app runs on
-EXPOSE 3000
+EXPOSE 3333
 
 # Start the application
-CMD ["node", "server.js"]
+CMD ["node", "server/server.js"]
