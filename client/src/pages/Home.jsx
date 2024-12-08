@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import AddParticipant from "../components/AddParticipant";
-import ParticipantsList from "../components/ParticipantsList";
-import SecretSantaDraw from "../components/SecretSantaDraw";
-import CodePrompt from "../components/CodePrompt";
-import IdentifyParticipant from "../components/IdentifyParticipant";
+import AddParticipant from "../components/AddParticipant.jsx";
+import ParticipantsList from "../components/ParticipantsList.jsx";
+import SecretSantaDraw from "../components/SecretSantaDraw.jsx";
+import CodePrompt from "../components/CodePrompt.jsx";
+import IdentifyParticipant from "../components/IdentifyParticipant.jsx";
 import "./styles/Home.css";
 
 const Home = () => {
