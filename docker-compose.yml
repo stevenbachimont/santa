@@ -9,6 +9,7 @@ services:
       - "5001:5001"
     volumes:
       - ./server:/app/server
+      # Pour éviter des problèmes avec node_modules, commentez la ligne suivante en prod
       - node_modules:/app/node_modules
     environment:
       - NODE_ENV=development
@@ -21,6 +22,7 @@ services:
       - "3333:3333"
     volumes:
       - ./client:/app/client
+      # Pour éviter des problèmes avec node_modules, commentez la ligne suivante en prod
       - node_modules:/app/node_modules
     environment:
       - NODE_ENV=development
