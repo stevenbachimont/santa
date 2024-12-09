@@ -14,7 +14,7 @@ RUN npm install
 COPY client/ /app/
 
 # Build the client application
-RUN npm run build
+RUN npm run dev
 
 # Install a simple HTTP server to serve the built React app (optional, if you want to serve the app)
 RUN npm install -g serve
