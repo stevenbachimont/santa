@@ -1,5 +1,5 @@
 # Use a base Node.js image
-FROM node:14
+FROM node:18
 
 # Set the working directory in the container
 WORKDIR /app
@@ -23,4 +23,4 @@ RUN npm install -g serve
 EXPOSE 3333
 
 # Start the application using serve
-CMD ["serve", "-s", "build", "-l", "3333"]
+CMD ["serve", "-s", "dev, "-l", "3333"]
