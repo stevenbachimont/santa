@@ -17,7 +17,7 @@ const Home = () => {
 
     useEffect(() => {
         if (isAuthenticated) {
-            fetch('http://localhost:5001/participants')
+            fetch('https://santapi.stevenbachimont.com/participants')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
@@ -46,7 +46,7 @@ const Home = () => {
             return;
         }
 
-        fetch(`http://localhost:5001/participants/${generatedCode}`, {
+        fetch(`https://santapi.stevenbachimont.com/participants/${generatedCode}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ const Home = () => {
     };
 
     const removeParticipant = (name) => {
-        fetch(`http://localhost:5001/participants/${generatedCode}/${name}`, {
+        fetch(`https://santapi.stevenbachimont.com/participants/${generatedCode}/${name}`, {
             method: 'DELETE',
         })
             .then(() => {
@@ -81,7 +81,7 @@ const Home = () => {
     };
 
     const handleCodeSubmit = (code) => {
-        fetch(`http://localhost:5001/participants`)
+        fetch(`https://santapi.stevenbachimont.com/participants`)
             .then(response => response.json())
             .then(data => {
                 if (data.title === code) {
@@ -114,7 +114,7 @@ const Home = () => {
         });
 
         // Update the title and save the draw result
-        fetch('http://localhost:5001/update-title', {
+        fetch('https://santapi.stevenbachimont.com/update-title', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

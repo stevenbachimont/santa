@@ -27,7 +27,7 @@ const SecretSantaDraw = ({ participants, identifiedParticipant, isOrganizer, gro
 
         // Send the draw result to the server
         const drawResult = results.map(pair => `${pair.giver} offre un cadeau à ${pair.receiver}`);
-        fetch('http://localhost:5001/update-title', {
+        fetch('https://santapi.stevenbachimont.com/update-title', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

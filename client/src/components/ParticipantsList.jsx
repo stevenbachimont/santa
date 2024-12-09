@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const ParticipantsList = ({ participants, onRemove, isOrganizer }) => {
     const handleRemove = (name) => {
-        fetch(`http://localhost:5001/participants/${name}`, {
+        fetch(`https://santapi.stevenbachimont.com/participants/${name}`, {
             method: 'DELETE',
         })
             .then(response => {
