@@ -19,6 +19,6 @@ services:
     working_dir: /usr/src/app/server
     command: ["pnpm", "run", "start"]
     ports:
-      - "3000:3000"
+      - "5001:5001"
     volumes:
       - ./server:/usr/src/app/server
