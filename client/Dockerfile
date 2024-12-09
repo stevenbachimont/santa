@@ -21,4 +21,3 @@ COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 3333
 
 CMD ["nginx", "-g", "daemon off;"]
-b"]
