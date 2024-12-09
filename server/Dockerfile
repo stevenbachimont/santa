@@ -4,17 +4,17 @@ FROM node:18
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+# Copy package.json and package-lock.json from the server folder
+COPY server/package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the server files
-COPY server/ ./server
+# Copy the rest of the server files
+COPY server/ ./
 
 # Expose the port the app runs on
 EXPOSE 5001
 
 # Start the application
-CMD ["node", "server/server.js"]
+CMD ["node", "server.js"]
